@@ -1,0 +1,285 @@
+JSON
+ 1. Создать внешний репозиторий c названием JSON.
+ Create a new repository -> Repository name (JSON) -> Add a README file -> Public --> Create a repository;
+
+ 2. Клонировать репозиторий JSON на локальный компьютер.
+$ git clone https://github.com/link
+
+ 3. Внутри локального JSON создать файл “new.json".
+$ touch new.json
+
+ 4. Добавить файл под гит.
+$ git add new.json
+
+ 5. Закоммитить файл.
+$ git commit -m "add new.json"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+$ git push
+
+ 7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+$ vim new.json
+{ "full name": "Avsievich Julia Vladimirovna",
+	"age": 18,
+	"number of pets": 2,
+	"expected salary": "500$"}
+
+ 8. Отправить изменения на внешний репозиторий.
+$ git add new.json | git commit -m "update new.json" | git push
+
+ 9. Создать файл preferences.json
+$ touch preferences.json
+
+ 10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+$ vim preferences.json
+{ "favourite movie": "Honey in mind",
+"favourite series": "Twin Peaks",
+"favourite food": "sushi",
+"favourite season": "summer",
+"dream country": "USA"}
+
+ 11. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+$ vim skills.json
+{"basic theory" : ["testing", "bug reports", "documentation", "types and methods of testing", "SDLC", "STLC"],
+  "client-server architecture": ["client", "server"],
+"HTTP": ["Methods", "srever respones codes", "structer of HTTP inputs"],
+"structer of": ["JSON", "XML"],
+"API testing": ["testing by using Postman", "API autotests"],
+"logs from an external server": ["reading logs", "removing logs"],
+"sniffing http web traffic": ["Charles", "Fiddler"],
+"Dev Tools": ["network", "console", "security", "elements"],
+"VPN": "different instruments",
+"mobile testing": ["guidelines", "ios features", "android features"],
+"Android Studio": "apk files",
+"ADB": "android debug bridge",
+"Terminal": ["Git Bash", "copy files", "autotests of routine tasks"],
+"SQL Basics": ["create", "delete", "drop", "insert into", "select", "from", "where", "join"],
+"Postgres database": ["installation", "сustomisation", "usage"],
+"Redis non-relational database": ["installation", "customisation", "usage"],
+"load testing": "JMeter",
+"Python": ["Basics", "creation of client-server app"]}
+
+ 12. Отправить сразу 2 файла на внешний репозиторий.
+$ git add . | git commit -m "add new" | git push --all
+
+ 13. На веб интерфейсе создать файл bug_report.json.
+ Add file -> Create new file -> bug_report.json
+
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit new file
+
+ 15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{ "id": 1,
+ "Summary":"Unable to add an item to the cart",
+ "Description": "The button 'cart' isn't clickable in the page 'Favourite'",
+ "STR": "1. Open app; 2. Go to the 'Market' page; 3. Add an item to the 'Favourite'; 4. Open page 'Favoutite'; 5. Click on button 'cart';",
+ "Expected result": "1. Button is clickable; 2. Item is added to the 'Cart' page",
+ "Actual result": "1. Button isn't clickable; 2. Item isn't added to the 'Cart' Page;",
+ "Severity": "Critical",
+ "Priority": "High",
+ "Comments": "Have a good day"
+}
+
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+click on button "Commit changes"
+
+ 17. Синхронизировать внешний и локальный репозиторий JSON
+$ git pull
+
+
+
+XML
+ 18. Создать внешний репозиторий c названием XML.
+Create a new repository -> Repository name (XML) -> Add a README file -> Public --> Create a repository;
+
+ 19. Клонировать репозиторий XML на локальный компьютер.
+$ git clone https:link
+
+ 20. Внутри локального XML создать файл “new.xml”.
+$ touch new.xml
+
+ 21. Добавить файл под гит.
+$ git add new.xml
+
+ 22. Закоммитить файл.
+$ git commit -m "add new.json"
+
+ 23. Отправить файл на внешний GitHub репозиторий.
+$ git push
+
+ 24. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+$ vim new.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<new aboutid="1">
+   <full_name>Julia Vladimirovna Avsievich</full_name>
+   <info>
+      <age>18</age>
+      <pets>2</pets>
+      <expected_salary>500$</expected_salary>
+   </info>
+</new>
+
+ 25. Отправить изменения на внешний репозиторий.
+$  git add new.xml | git commit -m "update new.xml" | git push
+
+ 26. Создать файл preferences.xml
+$ touch preferences.xml
+
+ 27. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, стрaна которую хотели бы посетить) в формате XML.
+$ vim preferences.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<new aboutid="1">
+   <fav_movie>Honey in mind</fav_movie>
+   <fav_series>Twin Peaks</favseries>
+      <fav_food>sushi</fav_food>
+      <fav_season>summer</fav_season>
+      <dream_country>USA</dream_country>
+</new>
+
+ 28. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+$ vim skills.xml
+ <?xml version="1.0" encoding="UTF-8"?>
+<new aboutid="1">
+   <basic_theory>testing, writing docs, SDLC, STLC</full_name>
+   <client-server_arch>server, cllient</client-server_arch>
+   <HTTP>HTTP methods, server respones codes, structer of HTTP inputs</HTTP>
+   <structer>syntax of xml and json</structer>
+     <Api>API testing by Postman, API autotests</Api>
+      <log>logs from an external server: reading and removing logs</log>
+      <snif>Sniffing by Charles and Fiddler</snif>
+      <dev>Dev Tools </dev>
+      <VPN>VPN</VPN>
+      <mob>mobile testing</mob>
+      <andr_std>Android Studio</andr_std>
+      <adb>android debug bridge</adb>
+       <term>GitBash, autotests</term>
+       <sql>SQL Basics</sql>
+       <postdb>Postgres database</postdb>
+       <redis>redis database</redis>
+       <jm>JMeter</jm>
+        <pyt>Python</pyt>
+</new>
+
+29. Сделать коммит в одну строку.
+$ git add . && git commit -m "add 2 files"  
+
+ 30. Отправить сразу 2 файла на внешний репозиторий.
+$ git push 
+
+ 31. На веб интерфейсе создать файл bug_report.xml.
+ Add file -> Create  new file -> bug_report.xml
+
+ 32. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit  new file
+
+ 33. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<?xml version="1.0" encoding="UTF-8"?>
+<bug_report aboutid="1">
+   <id>D3</id>
+   <Summary>Unable to add an item to the cart</Summary>
+   <Description>The button 'cart' isn't clickable in the page 'Favourite'</Description>
+   <STR>1. Open app; 2. Go to the 'Market' page; 3. Add an item to the 'Favourite'; 4. Open page 'Favoutite'; 5. Click on button 'cart';</STR>
+     <Expected_result>1. Button is clickable; 2. Item is added to the 'Cart' page</Expected_result>
+      <Actual result>1. Button isn't clickable; 2. Item isn't added to the 'Cart' Page;</Actual result>
+      <Severity>Critical</Severity>
+      <Priority>High</Priority>
+      <Comments>Have a good day</Comments>
+ 
+</bug_report>
+
+
+ 34. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+click on button "Commit changes"
+
+ 35. Синхронизировать внешний и локальный репозиторий XML
+$ git pull
+
+
+
+TXT
+ 36. Создать внешний репозиторий c названием TXT.
+Create a new repository -> Repository name (TXT) -> Add a README file -> Public --> Create repository;
+
+ 37. Клонировать репозиторий TXT на локальный компьютер.
+$ git clone https://github.com/julia-avsievich/TXT.git
+
+ 38. Внутри локального TXT создать файл “new.txt.
+$ touch new.txt
+
+ 39. Добавить файл под гит.
+$ git add new.txt
+
+ 40. Закоммитить файл.
+$ git commit -m "add new.txt"
+
+ 41. Отправить файл на внешний GitHub репозиторий.
+$  git push
+
+ 42. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+$ vim new.txt
+Full name: Avsievich Julia Vladimirovna
+Age: 18
+Number of pets: 2
+Expected salary: 500$
+
+ 43. Отправить изменения на внешний репозиторий.
+$ git add . && git commit -m " update new.txt" && git push
+
+ 44. Создать файл preferences.txt
+$ touch preferences.txt
+
+ 45. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, стрна которую хотели бы посетить) в формате TXT.
+$ vim preferences.txt
+Favourite movie: Honey in mind
+Favourite series: Twin Peaks
+Favorite food: sushi
+Favourite season: summer
+Dream Country: USA
+
+
+ 46. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+$ vim skills.txt
+Python
+Basic theory of testing
+HTTP methods
+reading and removing logs
+mobile testing
+Android studio
+Sniffing by Charled and Fiddler
+SQL basics
+Postgres database
+redis database
+JMeter
+API testing
+GitBash
+GitHub
+
+ 47. Сделать коммит в одну строку.
+$ git add . && git commit -m "add 2 files"  
+
+ 48. Отправить сразу 2 файла на внешний репозиторий.
+$ git push
+
+ 49. На веб интерфейсе создать файл bug_report.txt.
+ Add file -> Create new file -> bug_report.txt
+
+ 50. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Commit  new file
+
+ 51. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+id: 1,
+ Summary: Unable to add an item to the cart;
+ Description: The button 'cart' isn't clickable in the page 'Favourite';
+ STR: 1. Open app; 2. Go to the 'Market' page; 3. Add an item to the 'Favourite'; 4. Open page 'Favoutite'; 5. Click on button 'cart';
+ Expected result: 1. Button is clickable; 2. Item is added to the 'Cart' page;
+ Actual result: 1. Button isn't clickable; 2. Item isn't added to the 'Cart' Page;
+ Severity: Critical;
+ Priority: High;
+ Comments: Have a good day;
+
+ 52. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+click on button "Commit changes"
+
+ 53. Синхронизировать внешний и локальный репозиторий TXT
+$ git pull
+
